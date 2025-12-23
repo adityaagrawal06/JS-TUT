@@ -1,14 +1,16 @@
 // primitive tyoe(call by value)
 
+// const { useLayoutEffect } = require("react");
+
 // 7 types : string, number , boolean , null , undefined , symbol , BigInt
 
 // js is a dynamically type language as no need to declare type of a variable or const
 // no decimal special categorisation in js like float , all numbers
 
-const id = Symbol('123')
-const anotherid = Symbol('123')
+// const id = Symbol('123')
+// const anotherid = Symbol('123')
 
-console.log(id === anotherid) // False
+// console.log(id === anotherid) // False
 
 
 
@@ -16,20 +18,48 @@ console.log(id === anotherid) // False
 
 // Array, Objects , Functions
 
-const heroes =["shaktiman","naagraj", "doga"]
+// const heroes =["shaktiman","naagraj", "doga"]
 
-// let myobj = {
-//     name: Aditya,
-//     age: 20,
+// // let myobj = {
+// //     name: Aditya,
+// //     age: 20,
 
+// // }
+
+// // curly bracket k andar object h
+
+// const myFunction = function(){
+//     console.log("Hello World");
 // }
 
-// curly bracket k andar object h
+// console.log(typeof(myFunction)) // function, said as object function
 
-const myFunction = function(){
-    console.log("Hello World");
+// console.log(typeof(heroes)) //object
+
+
+// *******MEMORIES*********//
+
+// Stack(Primitive), Heap(Non-primitive)
+
+let myYoutubename = "AdityaAgrawal"
+
+let anothername =  myYoutubename
+anothername = "Chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "usergoogle.com", 
+    upi: "user@ybl"
+
 }
 
-console.log(typeof(myFunction)) // function, said as object function
+let userTwo = userOne
+userTwo.email = "hitesh@google.com"
 
-console.log(typeof(heroes)) //object
+console.log(userOne.email)
+console.log(userTwo.email)
+
+
+
