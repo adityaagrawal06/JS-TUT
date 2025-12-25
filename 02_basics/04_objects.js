@@ -60,12 +60,53 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // all keys in aray //IMPORTANT
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)) ;
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // all keys in aray //IMPORTANT
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)) ;
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+//*************DESTRUCTURINGGGG*********//
+
+
+const course = {
+    courseName : "Js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh",
+}
+
+// course.courseInstructor
+
+const {courseInstructor :instructor} =course
+console.log(instructor) ; //better method when we need to use it many times //destructuring
+
+//******************API's*********************** *//
+
+//in form of jason
+// {
+//     "name": "aditya",
+//     "courseName" : "js in hindi",
+//     "price": "free"
+
+// }
+
+
+//in form of arayys
+
+// [ 
+//     {},
+//     {},
+//     {},
+// ]
+
+
+
+
+
+
+
 
 
 
