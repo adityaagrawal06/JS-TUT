@@ -1,6 +1,8 @@
 
 // {} // when comes with function or if else it is called scope
 
+const { useReducer } = require("react")
+
 // // var c=300
 // let a= 400   //global scope
 // if(true) {
@@ -21,5 +23,37 @@
     
 // }
 
+
+
+//*****nested scope*******//
+
+function one(){
+    const username = "aditya"   //act as global scope for two
+
+    function two(){
+        const website = "youtube"
+        console.log(username)
+    }
+    // console.log(website)  //local scope for one
+
+    two()
+
+}
+one()
+
+
+
+
+
+if(true){
+    const username = "aditya"
+    if(username === "aditya"){
+        const website = " youtube"
+        // console.log(username + website)
+    }
+    // console.log(website)
+}
+
+// console.log(username);
 
 
