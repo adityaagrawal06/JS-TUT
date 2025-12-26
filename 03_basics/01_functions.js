@@ -59,7 +59,54 @@ function  logInUserMessage (username="sam"){     //default value
 }
 
 // console.log(logInUserMessage("aditya"))
-console.log(logInUserMessage())  //undefined just logged in
+// console.log(logInUserMessage())  //undefined just logged in for upar k upar wala case
+
+
+
+// function CalculateCartPrice (...num1){   /// ... is rest or spread depending upon uise
+//     return num1
+// }
+// console.log(CalculateCartPrice(200,300,500)); //gives array
+
+
+function CalculateCartPrice (val1,val2,...num1){   
+    return num1
+}
+console.log(CalculateCartPrice(200,300,500,2000));  //200 300 val1 val2 ho gya
+
+
+const user ={
+    username:"aditya",
+    price:"199",
+}
+
+function handleObject (anyObject){
+    console.log(`username is ${anyObject.username} and its price is ${anyObject.price}`)
+} 
+
+// handleObject(user)
+
+
+handleObject({
+    username :  "sam",
+    price : "399",
+})
+
+
+const myNewArray = [200,400,600,800,900]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+
+console.log(returnSecondValue(myNewArray));   //direct pass bhi kr skte h as in object      
+
+
+
+
+
+
+
 
 
 
