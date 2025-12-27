@@ -1,7 +1,6 @@
 
 // {} // when comes with function or if else it is called scope
 
-const { useReducer } = require("react")
 
 // // var c=300
 // let a= 400   //global scope
@@ -39,7 +38,7 @@ function one(){
     two()
 
 }
-one()
+// one()
 
 
 
@@ -51,9 +50,30 @@ if(true){
         const website = " youtube"
         // console.log(username + website)
     }
-    // console.log(website)
+    // console.log(website)  //error
 }
 
-// console.log(username);
+// console.log(username); //error
+
+
+
+//*************INTERESTING*******//
+
+
+console.log(addone(5))  //executed
+function addone(num){
+    return num+1
+}
+
+
+console.log(addTwo(5)) //error as stored in a variable
+const addTwo = function (num){    //function only often called expression
+    return num+2
+}
+
+
+
+
+
 
 
