@@ -32,22 +32,24 @@
 
 // Nullish Coalescing Operstor (??) : null undeined
 
-let val1;
-// val1= 5 ?? 10  //5
-// val1 = null?? 10 //10
-// val1 = undefined ?? 15 //15
-val1 = null ?? 10?? 20 //10
+// let val1;
+// // val1= 5 ?? 10  //5
+// // val1 = null?? 10 //10
+// // val1 = undefined ?? 15 //15
+// val1 = null ?? 10?? 20 //10
 
 
 
-console.log(val1) 
+// console.log(val1) 
 
 
-//  Terniary Operator
+// //  Terniary Operator
 
-// condition? true : false
+// // condition? true : false
 
-const iceTeaPrice =200
+// const iceTeaPrice =200
 
-iceTeaPrice>=80 ? console.log("morethan 80"): console.log("less tyhan 80");
+// iceTeaPrice>=80 ? console.log("more than 80"): console.log("less tyhan 80");
+
+
 
