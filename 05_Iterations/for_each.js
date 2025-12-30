@@ -1,5 +1,4 @@
 const coding = ["js","cpp","ruby","java","python"]
-
 // coding.forEach( function(item){
 //     console.log(item);
 // })
