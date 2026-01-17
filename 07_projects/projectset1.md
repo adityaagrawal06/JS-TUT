@@ -35,7 +35,7 @@ buttons.forEach(function (button) {
 
 
 ```
-## project 1
+## project 2
 
 ```javascript
 const form =document.querySelector('form');
@@ -72,4 +72,18 @@ form.addEventListener('submit',function(e){
 
 
 ```
+
+## project 3
+
+```javascript 
+
+const clock = document.getElementById('clock')
+
+// let date = new Date()
+// console.log(date.toLocaleTimeString())  // for once only
+
+setInterval(function(){
+  let date = new Date()
+  clock.innerHTML= date.toLocaleTimeString()
+},1000)
 
