@@ -185,3 +185,37 @@ function newGame(){
 }
 
 ```
+
+
+## Project 6
+
+```javascript
+
+
+// generate a random colour
+
+const randomColor = function(){
+  const hex = "0123456789ABCDEF"
+  let color = '#'
+  for(let i =0 ; i<6; i++){
+      color+= hex[Math.floor(Math.random()*16)]
+  }
+  return color;
+}
+
+let set
+document.querySelector("#start").addEventListener('click',function(){
+  if(!set){
+    set=setInterval(function(){
+    document.body.style.backgroundColor = randomColor();
+    
+  },1000)};
+  
+})
+
+document.querySelector("#stop").addEventListener('click',function(){
+   clearInterval(set);
+   set = null; // to add professsionalism
+})
+
+```
